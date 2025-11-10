@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>City Designer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="cityname">
+        City Designer - <span id="namecity">Unnamed city</span>
+      </h1>
+    </header>
+
+    <div class="maingame">
+      <div id="information">
+        <h1>
+          Befolking:<span id="population"></span>/<span id="boliger"></span>
+        </h1>
+        <br />
+        <h1>Penger:<span id="money"></span></h1>
+      </div>
+
+      <div id="upgrades">
+        <a href="#" class="linktoupgrade" onclick="upgradeeconomy()">
+          <div class="upgrade" id="upgrade1">
+            <span class="nameofup"
+              >Økonomi - Level <span id="phant">1</span></span
+            >
+            <span id="price1">40000</span>
+          </div>
+        </a>
+
+        <a href="#" class="linktoupgrade" onclick="upgradehousing()">
+          <div class="upgrade" id="upgrade2">
+            <span class="nameofup" id="zawg"
+              >Bolig - Level <span id="slime">1</span></span
+            >
+            <span id="price2">30000</span>
+          </div>
+        </a>
+
+        <a href="#" class="linktoupgrade" onclick="upgradetech()">
+          <div class="upgrade" id="upgrade3">
+            <span class="nameofup"
+              >Teknologi - Level <span id="telipeni">1</span></span
+            >
+            <span id="price3">35000</span>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="bottomgame">
+      <div id="messages"></div>
+      <div id="buy">
+        <div class="buyingbutton">
+          Bygge bolig<br /><span id="houseprice">500</span><br /><img
+            src="bilder/crib.png"
+          /><br />
+          <button onclick="sellhouse()">-</button>
+          <span id="houses">0</span>
+          <button onclick="buyhouse()">+</button>
+        </div>
+        <div class="buyingbutton">
+          Bygge butikk <br />
+          <span id="storeprice">800</span><br />
+          <img src="bilder/shop.png" /><br />
+          <button onclick="sellstore()">-</button>
+          <span id="stores">0</span>
+          <button onclick="buystore()">+</button>
+        </div>
+        <div class="buyingbutton">
+          Bygge fabrikk<br /><span id="factprice">1200</span><br /><img
+            src="bilder/factory.png"
+          /><br />
+          <button onclick="sellfactory()">-</button>
+          <span id="factory">0</span>
+          <button onclick="buyfactory()">+</button>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <h1>.</h1>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+      const cityname = localStorage.getItem("cityname");
+      if (cityname) {
+        document.getElementById("namecity").textContent = cityname;
+      } else {
+        document.getElementById("namecity").textContent = "Unnamed City";
+      }
+    </script>
+  </body>
+</html>
+
+<!--- 
+-Du må bygge en ny vei som tar 10% av pengene
+-du får donasjon fra regjerningen
+-en storm ødelegger en fabrikk
+-økonomi boom
+-økonomi crash
+-en butikk går konkurs
+-terror angrep
+-
+-->

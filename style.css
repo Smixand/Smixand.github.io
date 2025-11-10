@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+  background-color: #9f9e9e;
+  justify-content: center;
+  margin: 0 auto;
+  display: flex;
+  height: 10%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+footer {
+  background-color: #9f9e9e;
+  justify-content: center;
+  margin: 0 auto;
+  display: flex;
+  height: 10%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #9f9e9e;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+#namethecity {
+  margin-top: 10%;
+  background-color: gainsboro;
+  margin-left: 40%;
+  margin-right: 40%;
+  height: 40%;
+  padding: 4%;
+  justify-content: center;
+  text-align: center;
+  flex: 1;
+}
+
+#namethecity button {
+  text-align: center;
+  background-color: rgb(120, 208, 255);
+  border-radius: 100px;
+}
+
+#namethecity button:hover {
+  background-color: rgb(120, 208, 255);
+  font-weight: bold;
+}
+
+#information {
+  margin-left: 4%;
+  margin-top: 4%;
+  width: 60%;
+}
+
+.linktoupgrade {
+  text-decoration: none;
+  color: black;
+}
+
+.upgrade {
+  display: flex;
+  justify-content: space-between;
+  /* background-color: #31586dff; */
+  outline: black 1px solid;
+  height: 6vh;
+  width: 100%;
+  padding-left: 1%;
+  padding-right: 1%;
+  padding-top: 3vh;
+  margin-bottom: 2%;
+}
+
+.upgrade:hover {
+  font-weight: bold;
+}
+
+#upgrades {
+  width: 30%;
+  padding-top: 2%;
+}
+
+.maingame {
+  display: flex;
+  margin-top: 5%;
+  min-width: 100%;
+}
+
+.bottomgame {
+  padding-top: 4%;
+  padding-left: 4%;
+  display: flex;
+  min-width: 100%;
+}
+
+#messages {
+  background-color: gainsboro;
+  border: 1px solid black;
+  width: 30%;
+  height: 30vh;
+  overflow-y: auto;
+}
+
+#buy {
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 60%;
+
+  display: flex;
+}
+
+.buyingbutton {
+  background-color: yellow;
+  width: 30%;
+  margin-right: 5%;
+  height: 100%;
+  text-align: center;
+}
+
+img {
+  width: 80%;
+  height: 70%;
+}
